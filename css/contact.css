@@ -18,20 +18,69 @@ body{
 	/*background-size: 100% 100%;*/
     display: block;
 }
+.ejbanner img{
+	width: 100%;
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	.ejbanner {
+		height: auto;
+	}
+	.ejbanner img{
+		display: block;
+	}
+}
 .ejnav{
 	height: 88px;
     padding-top: 3px;
     background: #fafafa;
+}
+@media screen and (max-width: 991px) {
+.ejnav{
+	height: 58px;
+	padding-top: 3px;
+    background: #fafafa;
+}
+}
+@media screen and (max-width: 768px) {
+.ejnav{
+    height: auto;
+    padding-top: 3px;
+    background: #fafafa;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
 }
 .ejnav nav{
 	width: 76%;
 	height: 100%;
 	margin: 0 auto;
 }
+@media screen and (min-width: 1440px) {
+.ejnav nav{
+	width: 76%;
+}
+}
+@media screen and (min-width: 1200px) {
+.ejnav nav{
+	width: 1170px;
+}
+}
+@media screen and (min-width: 991px) {
+.ejnav nav{
+	width: 970px;
+}
+}
+@media screen and (min-width: 768px) {
+.ejnav nav{
+	width: 750px;
+}
+}
 .ejnav nav ul{
-	width: 1124px;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 .ejnav nav ul li{
 	list-style: none;
@@ -50,6 +99,37 @@ body{
     margin-left: 20px;
     margin-right: 20px;
     text-decoration: none;
+}
+@media screen and (max-width: 1366px) {
+	.ejnav nav ul li a{
+		font-size: 18px;
+    	margin-left: 10px;
+    	margin-right: 10px;
+	}
+}
+@media screen and (max-width: 991px) {
+	.ejnav nav ul li a{
+		display: block;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    line-height: 52px;
+	    border-bottom: solid 3px #fafafa;
+	    color: #616161;
+	    font-size: 16px;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
+}
+@media screen and (max-width: 768px) {
+	.ejnav nav ul li a{
+		display: block;
+	    padding-left: 5px;
+	    padding-right: 5px;
+	    line-height: 22px;
+	    font-size: 14px;
+	    margin-left: 0;
+	    margin-right: 0;
+	}
 }
 .ejnav nav ul li a:hover{
 	border-bottom: solid 3px #f39700;
@@ -72,9 +152,46 @@ body{
     padding-right: 15px;
 	position: relative;
 }
+@media screen and (min-width: 768px) {
+	.main .content{
+		width: 750px;
+	}	
+	/*.main .content .map1 img{
+		width: 750px;
+	}*/
+}
+@media screen and (min-width: 992px) {
+	.main .content{
+		width: 970px;
+	}	
+}
+@media screen and (min-width: 1200px) {
+	.main .content{
+		width: 1170px;
+	}	
+}
+@media screen and (min-width: 1440px) {
+	.main .content{
+		width: 76%;
+	}	
+}
 .main .content .map1{
 	width: 928px;
 	position: relative;
+}
+.main .content .map2{
+	display: none;
+}
+@media screen and (max-width: 768px) {
+	.main .content .map1{
+		display: none;
+	}
+	.main .content .map2{
+		display: block;
+	}
+	.main .content .map2 img{
+		width: 100%;
+	}
 }
 .main .content .map1 .dian{
 	position: absolute;
@@ -148,8 +265,14 @@ body{
     font-size: 16px;
     line-height: 36px;
 }
-
-.contact_main{
+@media screen and (max-width: 768px) {
+	.main .content .map3{
+		font-size: 14px;
+    	line-height: 24px;
+    	position: static;
+	}
+}
+.contact-main{
 	padding: 45px 0 40px;
 }
 .contact-main .container{
@@ -159,10 +282,32 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
+@media screen and (min-width: 768px) {
+	.contact-main .container{
+		width: 750px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.contact-main .container{
+		width: 970px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.contact-main .container{
+		width: 1170;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.contact-main .container{
+		width: 76%;
+	}
+}
+
 .contact-main .container .row{
 	margin-left: -15px;
     margin-right: -15px;
     /*position: relative;*/
+   overflow: hidden;
 }
 .contact-main .container .row .animated{
 	width: 30%;
@@ -170,6 +315,11 @@ body{
 	margin-left: 1.5%;
 	margin-right: 1.5%;
 	/*position: absolute;*/
+}
+@media screen and (max-width: 992px) {
+	.contact-main .container .row .animated{
+		width: 100%;
+	}
 }
 .contact-main .container .row .animated .contact_div{
 	background: #fafafa;
@@ -235,16 +385,40 @@ body{
     overflow: hidden;
     margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+	.gz_main .container .con{
+		width: 100% ! important;
+	}
+}
 .gz_main .container .con .left-img{
 	visibility: visible;
 	width: auto;
     height: 249px;
     float: left;
 }
+@media screen and (max-width: 768px) {
+	.gz_main .container .con .left-img{
+		width: 100%;
+		float: none;
+		display: block;
+		height: auto;
+	}
+	.gz_main .container .con .left-img img{
+		width: 100%;
+	}
+}
 .gz_main .container .con .right-text{
 	visibility: visible;
     padding-top: 50px;
     float: right;
+}
+@media screen and (max-width: 768px) {
+	.gz_main .container .con .right-text{
+		display: block;
+		padding-top: 20px;
+		width: 100%;
+		float: none;
+	}
 }
 .gz_main .container .con .right-text .tit1{
 	color: #000;
