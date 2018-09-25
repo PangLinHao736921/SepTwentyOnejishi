@@ -1,0 +1,54 @@
+.Catalog_main .Catalog_contain {
+  width: 96%;
+}
+.Catalog_main .Catalog_contain_seach #Catalog_text {
+  width: 60%;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 36px;
+  border: none;
+  border: 1px solid #ddd;
+  margin-left: 10px;
+  font-size: 0.7rem;
+}
+.Catalog_main .Catalog_contain_seach #Catalog_btn {
+  width: 5rem;
+  height: 37px;
+  font-size: 1rem;
+}
+.Catalog_main .Catalog_contain_seach .Catalog_seach {
+  margin-left: 22px;
+  margin-top: 26px;
+}
+.Catalog_main .Catalog_title {
+  height: 60px;
+}
+.Catalog_main .Catalog_title span {
+  font-size: 0.8rem;
+  line-height: 60px;
+}
+.Catalog_lister ul li span {
+  font-size: 0.5rem;
+}
+.Catalog_main .Catalog_tap div:nth-child(1),
+.Catalog_main .Catalog_tap div:nth-child(2),
+.Catalog_main .Catalog_tap .Catalog_plic a,
+.Catalog_main .Catalog_tap .Catalog_citys a {
+  font-size: 1rem;
+}
+.Catalog_main .Catalog_tap .Catalog_citys a{
+  width: 20%
+}
+.Catalog_main .Catalog_contain .Catalog_Sea{
+  height: 400px;
+}
+#Catalog_Pic ul li{
+  width: 50%;
+  margin-right: 0;
+}
+.Catalog_main .Catalog_tap .Catalog_citys .Catalog_x{
+  width: 30%
+}
+.Catalog_zhi{
+  margin-top: 20px;
+}

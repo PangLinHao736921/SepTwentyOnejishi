@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/Catalog.css">
+    <link rel="stylesheet" href="css/max-width.css" media="screen and (max-width:1200px)">
+</head>
+
+<body>
+    <div class="Catalog_banner">
+        <img src="img/Catalog/df35f2ad22219b62fb0dfdc8246049af.jpg" alt="">
+    </div>
+
+    <div class="Catalog_main">
+        <div class="Catalog_tab">
+            <ul class="Catalog_tab_mian">
+                <li>
+                    <a href="#">招聘信息</a>
+                </li>
+                <li>
+                    <a href="#">员工关怀</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="Catalog_contain">
+            <div class="Catalog_cont_main">
+                <div class="Catalog_Sea">
+                    <div class="Catalog_contain_seach">
+                        <input type="text" placeholder="请输入职位搜索" id="Catalog_text">
+                        <img src="img/Catalog/xjfdj.png" alt="" class="Catalog_seach">
+                        <input type="button" value="搜索" id="Catalog_btn">
+                        <div class="Catalog_remove">
+                            <a href="#">清空搜索条件</a>
+                        </div>
+                    </div>
+                    <div class="Catalog_tap">
+                        <div>
+                            <div class="Catalog_plic">工作地点：</div>
+                            <div class="Catalog_citys">
+                                <a href="javascript:;" dies="a">全部</a>
+                                <a href="javascript:;" dies="b">北京</a>
+                                <a href="javascript:;" dies="s">深圳</a>
+                                <a href="javascript:;" dies="h">上海</a>
+                                <a href="javascript:;" dies="z">杭州</a>
+                                <a href="javascript:;" dies="c">成都</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="Catalog_plic Catalog_zhi">职位类型：</div>
+                            <div class="Catalog_citys">
+                                <a href="javascript:;" clie="a">全部</a>
+                                <a href="javascript:;" clie="k">开发者</a>
+                                <a href="javascript:;" clie="m">测试类</a>
+                                <a href="javascript:;" clie="x" class="Catalog_x">系统运维类</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Catalog_title">
+                    <span>职位名称</span>
+                    <span>工作地点</span>
+                    <span>职位类型</span>
+                    <span>招聘人数</span>
+                    <span>发布时间</span>
+                </div>
+
+                <div class="Catalog_lister">
+                    <ul id="Catalog_ul">
+                        <!-- 动态创建 -->
+                    </ul>
+                </div>
+            </div>
+            <div class="Catalog_Pic" id="Catalog_Pic">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="backtop">
+        <img src="img/Catalog/backtop.png" alt="">
+    </div>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/Catalog.js"></script>
+</body>
+</html>

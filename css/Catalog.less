@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+@height:80px;
+@color:orange;
+@fontSize:1.2rem;
+@boxShadow:3px 1px 20px  3px #eee;
+@borderRadus:10px;
+.Catalog_banner{
+  width: 100%;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.Catalog_main{
+  width: 100%;
+  height: @height;
+  background: #fafafa;
+  .Catalog_tab{
+    width: 80%;
+    height: @height;
+    margin: 0 auto;
+  }
+  .Catalog_tab_mian{
+    width: 100%;
+  }
+  ul li{
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+  }
+  a{
+    font-size: 1.4rem;
+    color: gray;
+    line-height: @height;
+    height: @height;
+  }
+  ul li:hover{
+    border-bottom: 5px solid orange;
+  }
+  ul li:hover a{
+    color: @color;
+  }
+  .Catalog_contain{
+    width: 80%;
+    margin: 30px auto;
+    border-right: 10px;
+    .Catalog_Sea{
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      box-shadow: @boxShadow;
+      border-radius: @borderRadus;
+    }
+  }
+  .Catalog_contain_seach{
+    width: 100%;
+    height: @height;
+    #Catalog_text{
+      width: 25%;
+      margin-top: 15px;
+      border-radius: 5px;
+      height: 55px;
+      border: none;
+      font-size: @fontSize;
+      border: 1px solid #ddd;
+      margin-left: 30px;
+    }
+    .Catalog_seach{
+      position: absolute;
+      z-index: 999;
+      margin-left: 33px;
+      margin-top: 33px;
+    }
+    #Catalog_btn{
+      width: 135px;
+      height: 54px;
+      background: #0086d1;
+      color: #fff;
+      position: relative;
+      border-radius: 5px;
+      top: 2px;
+      left: 20px;
+      border: none;
+      font-size: @fontSize;
+    }
+    .Catalog_remove{
+      float: right;
+      padding-right: 20px;
+    }
+    .Catalog_remove a{
+      font-size: @fontSize - .2rem;
+      color: #0086d1;
+    }
+  }
+  .Catalog_tap{
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    div:nth-child(1),div:nth-child(2){
+      height: @height - 30px;
+      padding-bottom: 20px;
+      margin-left: 5px;
+    }
+    .Catalog_plic{
+      line-height: @height;
+      font-size: 1.2rem;
+    }
+    .Catalog_plic,.Catalog_citys{
+      float: left;
+    }
+  }
+  .Catalog_title{
+    width: 100%;
+    height: @height;
+    background: #fff ;
+    box-shadow: @boxShadow;
+    border-radius: @borderRadus;
+    span{
+      width: 20%;
+      text-align: center;
+      float: left;
+      height: @height -10px;
+      line-height: @height;
+      color: gray;
+      font-size: @fontSize;
+    }
+  }
+  .Catalog_lister{
+     width: 100%;
+     height: 300px;
+     background:#fff;
+     margin-top: 20px;
+    box-shadow: @boxShadow;
+    ul li{
+      width: 100%;
+      height: @height - 20px ;
+      margin-top: 20px;
+      border: none;
+      background-color: #fafafa;
+      cursor: pointer;
+    }
+    span{
+      width: 20%;
+      display: block;
+      float: left;
+      line-height: @height - 20px;
+    }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
