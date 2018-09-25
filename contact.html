@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>联系我们</title>
+	<link rel="stylesheet" href="css/contact.css" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HbUVYMUg6PwbOnXkztdgSQlQ"></script>
+</head>
+<body>
+	<div class="ejbanner">
+		<img src="img/contact/bj2.jpg">
+	</div>
+	<div class="ejnav">
+		<nav>
+			<ul>
+				<li class="btn">
+					<a class="cur" page="one" href="javascript:;">全国分布图</a>
+				</li>
+				<li class="btn">
+					<a page="two" href="javascript:;">联系我们</a>
+				</li>
+				<li class="btn">
+					<a page="three" href="javascript:;">关注我们</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<div class="main xs" style="display:block">
+		<div class="content">
+			<div class="map1">
+				<img src="img/contact/map1.png">
+			</div>
+			<div class="map2">
+				<img src="img/contact/map22.jpg">
+			</div>
+			<div></div>
+			<div class="map3">
+				<img src="img/contact/dw1.png">
+				总部
+				</br>
+				<img src="img/contact/dw2.png">
+				分子公司
+				</br>
+				<img src="img/contact/dw3.png">
+				办事处
+				</br>
+				<img src="img/contact/dw4.png">
+				交付中心
+				</br>
+			</div>
+		</div>
+	</div>
+	<div class="contact-main xs" style="display: none">
+		<div class="container">
+			<div class='row'>
+				<div class="animated">
+					<div class="contact_div">
+						<div class='tit'>
+							<img src="img/contact/dingwei2.png">
+							北京分公司
+						</div>
+						<div class="note">
+							<div class="note_div fix">
+								<span class="f1">电话:</span>
+								<div class="note_div1">010-62980018</div>
+							</div>
+							<div class="note_div fix">
+								<span class="f1">地址:</span>
+								<div class="note_div2">北京市海淀区上地东路9号得实大厦1层</div>
+							</div>
+						</div>
+						<div class="zhanshi">
+							<section id="allmap1">
+								
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="animated">
+					<div class="contact_div">
+						<div class='tit'>
+							<img src="img/contact/dingwei2.png">
+							上海分公司
+						</div>
+						<div class="note">
+							<div class="note_div fix">
+								<span class="f1">电话:</span>
+								<div class="note_div1">021-60759724</div>
+							</div>
+							<div class="note_div fix">
+								<span class="f1">地址:</span>
+								<div class="note_div2">上海市静安区陕西北路66号科恩国际中心1718室</div>
+							</div>
+						</div>
+						<div class="zhanshi">
+							<section id="allmap2">
+								
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="animated">
+					<div class="contact_div">
+						<div class='tit'>
+							<img src="img/contact/dingwei2.png">
+							杭州分公司
+						</div>
+						<div class="note">
+							<div class="note_div fix">
+								<span class="f1">电话:</span>
+								<div class="note_div1">0571-89801889</div>
+							</div>
+							<div class="note_div fix">
+								<span class="f1">地址:</span>
+								<div class="note_div2">杭州市余杭区五常街道赛银国际广场1幢5楼</div>
+							</div>
+						</div>
+						<div class="zhanshi">
+							<section id="allmap3">
+								
+							</section>
+						</div>
+					</div>
+				</div>
+				<div class="animated">
+					<div class="contact_div">
+						<div class='tit'>
+							<img src="img/contact/dingwei2.png">
+							深圳分公司
+						</div>
+						<div class="note">
+							<div class="note_div fix">
+								<span class="f1">电话:</span>
+								<div class="note_div1">13810352727</div>
+							</div>
+							<div class="note_div fix">
+								<span class="f1">地址:</span>
+								<div class="note_div2">深圳市南山区南山街道南海大道西桂庙路北阳关华艺大厦</div>
+							</div>
+						</div>
+						<div class="zhanshi">
+							<section id="allmap4">
+								
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wow">
+				
+			</div>
+		</div>
+	</div>
+	<div class="gz_main xs" style="display: none;">
+		<div class="container"> 
+			<div class="con">
+				<div class="left-img">
+					<img src="img/contact/weima.jpg">
+				</div>
+				<div class="right-text">
+					<div class="tit1">微信公众号</div>
+					<div class="tit2">WECHAT PUBLIC NUMBER</div>
+					<div class="tit3">公众号：汉克时代</div>
+					<div class="tit4">关注我们，更多资讯，提前放映！</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dibu">
+		
+	</div>
+	 <script id="mytmpl" type="text/x-jquery-tmpl">
+        <div class="dian" style="top:${x};right:${y};color:${color}">
+        	<div class="d" style="background:${color};transform: scale(${size});"></div>
+        	<div class="zhi">${site}</div>
+        	<div class="yuan yuan_30" style="border: 3px solid ${color};"></div>
+        	<div class="yuan yuan_60" style="border: 3px solid ${color};"></div>
+        	<div class="yuan yuan_90" style="border: 3px solid ${color};"></div>
+        </div>
+    </li>
+    </script>
+	<script type="text/javascript" src="lib/jquery-1.12.3.min.js" ></script>
+	<script type="text/javascript" src="lib/jquery.tmpl.js" ></script>
+	<script type="text/javascript" src="js/contact.js" ></script>
+</body>
+</html>
