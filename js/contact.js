@@ -6,6 +6,7 @@ $(function() {
 			this.bind();
 		}
 		init() {
+			$(".dibu").load("footer.html");
 			this.one();
 		}
 		bind() {
