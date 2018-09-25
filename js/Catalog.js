@@ -112,7 +112,6 @@ function Sattff() {
         $('#Catalog_Pic ul').html('')
         // console.log(data.data);
         var Catalog_main_img = data.data;
-        console.log(Catalog_main_img);
         for (var i = 0; i < Catalog_main_img.length; i++) {
             var Catalog_img_list = $('<li class="Catalog_Pic_img"><a href="#" id="Catalog_a"><img src="' + Catalog_main_img[i].Catalog_src + '" alt=""></a><p class="Catalog_Pic_title">' + Catalog_main_img[i].Catalog_title + '</p></li>');
             $('.Catalog_Pic ul').append(Catalog_img_list);
